@@ -1,26 +1,27 @@
 var formattedDate = moment(new Date).format('dddd MMMM Do');
 $('#currentDay').text(formattedDate);
 
-$(".btn").on("click",function(){
-  var id= $(this).attr("id")
-  
+$(".btn").on("click", function () {
+  var id = $(this).attr("id")
+
   var currentTime = id.split('-')[1]
-  var eventDetails = $('#hour-'+currentTime).val()
-  console.log(id,currentTime,eventDetails)
-  localStorage.setItem(currentTime,eventDetails);
+  var eventDetails = $('#hour-' + currentTime).val()
+  console.log(id, currentTime, eventDetails)
+  localStorage.setItem(currentTime, eventDetails);
 })
 
 var currentTime = moment().hour()
-/ for (let i = 9; i <= 17; i++) { 
-  localStorage.getItem(i)
-      // if(hours > businessHours[i]) {
-      //     document.setElementByID('textarea').disabled;
-      // console.log(false);
-      // } else {
-      //   document.getElementById('hour9').style.background="red";
-      //   console.log(true);
-      // }
-  };
+  for (let i = 9; i <= 17; i++) {
+    var userplan = localStorage.getItem(i)
+    $("#hour-" + i).val(userplan)
+    if(hours > businessHours[i]) {
+    //     document.setElementByID('textarea').disabled;
+    // console.log(false);
+    // } else {
+    //   document.getElementById('hour9').style.background="red";
+    //   console.log(true);
+    // }
+  
 // var saveButton = document.getElementsByTagName('button');
 // var eventDetails = document.getElementsByTagName('textarea');
 // 
@@ -30,7 +31,7 @@ var currentTime = moment().hour()
 // var hours = d.getHours();
 
 // var businessHours = [9, 10, 11, 12, 13, 14, 15, 16, 17];
-/
+//
 
 // saveButton.addEventListener('click', saveEvent)
 
