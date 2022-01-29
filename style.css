@@ -69,3 +69,10 @@ textarea{
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+
+
+span{
+  min-width: 60px;
+  /* width: 50px; */
+  max-width: 60px;;;
+}

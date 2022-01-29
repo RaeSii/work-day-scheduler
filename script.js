@@ -14,14 +14,14 @@ var currentTime = moment().hour()
   for (let i = 9; i <= 17; i++) {
     var userplan = localStorage.getItem(i)
     $("#hour-" + i).val(userplan)
-    if(hours > businessHours[i]) {
-    //     document.setElementByID('textarea').disabled;
-    // console.log(false);
-    // } else {
-    //   document.getElementById('hour9').style.background="red";
-    //   console.log(true);
-    // }
-  
+    if(i<currentTime) {
+      $("#hour-" + i).addClass("bg-primary")
+    } else if( i == currentTime) {
+      $("#hour-" + i).addClass("bg-secondary")
+    }else{
+      $("#hour-" + i).addClass("bg-warning")
+    }
+  }
 // var saveButton = document.getElementsByTagName('button');
 // var eventDetails = document.getElementsByTagName('textarea');
 // 
@@ -59,6 +59,3 @@ var currentTime = moment().hour()
 //       //}
 
 // //}
-
-
-
