@@ -35,4 +35,4 @@ Rachel Schaaf
 
 #### Screenshot:
 
-! [Image](./image1.png)
+! [Image](https://github.com/RaeSii/work-day-scheduler/blob/main/image1.png)
