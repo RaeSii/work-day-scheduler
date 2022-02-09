@@ -1,5 +1,9 @@
 # Work Day Scheduler Starter Code
 
+# Deployment: 
+[Live](https://raesii.github.io/work-day-scheduler/)
+
+## Requirements
 GIVEN I am using a daily planner to create a schedule:
 
 WHEN I open the planner
@@ -22,3 +26,13 @@ THEN the text for that event is saved in local storage //DONE
 
 WHEN I refresh the page
 THEN the saved events persist //DONE
+
+### Technology
+HTML, Javascript, CSS, Bootstrap, JQuery
+
+#### Coded By:
+Rachel Schaaf
+
+#### Screenshot:
+
+![Image](./Screenshot 2022-01-29 142724.png)
