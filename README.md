@@ -1,4 +1,4 @@
-# Work Day Scheduler Starter Code
+# Work Day Scheduler
 
 # Deployment: 
 [Live](https://raesii.github.io/work-day-scheduler/)
